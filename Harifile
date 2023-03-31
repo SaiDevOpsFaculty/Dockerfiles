@@ -1,0 +1,6 @@
+FROM ubuntu
+WORKDIR /tmp
+RUN echo "Hi Sai" > /tmp/saifile
+ENV myname sai
+COPY linuxfile /etc
+ADD devops.tar.gz /home
